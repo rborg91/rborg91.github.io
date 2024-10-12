@@ -78,9 +78,9 @@ html {
   box-sizing: inherit; }
 
 html, body {
-  height: 100%;
-  overflow-x: hidden;
-  width: 100%; }
+  height: auto;
+  overflow-x: auto;
+  width: auto; }
   @media screen and (max-height: 640px) {
     html, body {
       height: auto;
@@ -843,8 +843,7 @@ button,
   bottom: 4em;
   color: rgba(255, 255, 255, 0.5);
   left: 4em;
-  opacity: 0.5;
-  position: absolute; }
+  opacity: 0.5;}
   #footer .icons {
     margin: 0 0 0.5em 0; }
   #footer .copyright {
