@@ -60,6 +60,10 @@ img {
   width: 120%;
 }
 
+figcaption {
+  font-size: x-small;
+}
+
 footer {
   border-top: 1px solid var(--border);
   margin-top: 1rem;
