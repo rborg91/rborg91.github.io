@@ -51,5 +51,30 @@
 			<br><a href="https://github.com/rborg91" target="_blank">GitHub</a>
 		</footer>
 
+		<br><a id="multiClickLink" href="easter-egg.html" data-clicks="0">
+			<img src="images/easter-egg.png" class="easter-egg"></a>
+	
+	<!-- Script for having a multi click function in the easter egg -->
+	<script>
+	const link = document.getElementById('multiClickLink');
+	const requiredClicks = 7; // Change this number to set how many clicks are needed
+
+	link.addEventListener('click', function(event) {
+		// Stop the link from opening immediately
+		event.preventDefault(); 
+
+		// Get current click count
+		let currentClicks = parseInt(this.getAttribute('data-clicks')) + 1;
+		this.setAttribute('data-clicks', currentClicks);
+
+		// Check if the user has reached the target number
+		if (currentClicks >= requiredClicks) {
+		window.location.href = this.href;
+		} else {
+		console.log(`Clicked ${currentClicks}/${requiredClicks}. Keep clicking!`);
+		}
+	});
+	</script>
+
 	</body>
 </html>
