@@ -81,6 +81,10 @@ footer {
     border-top-width: 1px;
 }
 
+.padded-ul {
+  padding-left: 1rem;
+}
+
 .easter-egg {
   display: block;
   max-width:25px;
@@ -88,13 +92,8 @@ footer {
   height: auto;
 }
 
-.easter-egg-gif {
-  width: 50%;
+.easter-egg-video {
+  width: 100%;
+  max-width: 800px;
   height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.padded-ul {
-  padding-left: 1rem;
 }
